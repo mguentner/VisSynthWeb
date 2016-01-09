@@ -1,0 +1,65 @@
+[
+ "road roof",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1.023
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": {
+   "type": "osc",
+   "f": 2.007,
+   "a": 0.528,
+   "p": 0,
+   "o": 0.528
+  },
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "transform",
+  "x": -0.45,
+  "y": -1.485,
+  "scale": 1.981,
+  "angle": 0
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0.007,
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "perspective",
+  "perspective": {
+   "type": "perspective",
+   "x1": -0.078,
+   "y1": 0,
+   "x2": -0.868,
+   "y2": 0.703,
+   "x3": -0.019,
+   "y3": 0,
+   "x4": 0.75,
+   "y4": 0.75
+  }
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.988,
+  "saturation": 0
+ }
+]

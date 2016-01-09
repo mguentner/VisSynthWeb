@@ -1,0 +1,57 @@
+[
+ "motion grid warp",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "sobel",
+  "secondary": 0.5,
+  "coeff": 2.71,
+  "alpha": 0.84,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": -0.54,
+  "contrast": 0
+ },
+ {
+  "effect": "posterize",
+  "steps": 4.66
+ },
+ {
+  "effect": "grid",
+  "size": 1.71,
+  "angle": 0
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.09,
+  "interval": 1,
+  "damper": 0.84
+ },
+ {
+  "effect": "fastBlur",
+  "size": 20
+ },
+ {
+  "effect": "displacement",
+  "strength": 0.05
+ }
+]

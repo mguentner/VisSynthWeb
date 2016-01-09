@@ -1,0 +1,57 @@
+[
+ "rings",
+ {
+  "effect": "kaleidoscope",
+  "sides": 1998.999,
+  "angle": {
+   "type": "osc",
+   "f": 0.313,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  },
+  "angle2": {
+   "type": "osc",
+   "f": 0.208,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "kaleidoscope",
+  "sides": 5,
+  "angle": {
+   "type": "osc",
+   "f": 0.148,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  },
+  "angle2": {
+   "type": "osc",
+   "f": 0.253,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": {
+   "type": "beat",
+   "pulse": 0.466,
+   "f": 0,
+   "a": 0,
+   "p": 0,
+   "o": 0.834
+  },
+  "angle": 0
+ },
+ {
+  "effect": "vibrance",
+  "strength": 1
+ }
+]

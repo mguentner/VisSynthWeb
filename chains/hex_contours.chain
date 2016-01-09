@@ -1,0 +1,46 @@
+[
+ "hex contours",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "hexagonalPixelate",
+  "center": {
+   "type": "pos",
+   "x": 0,
+   "y": 0
+  },
+  "size": 19.82
+ },
+ {
+  "effect": "sobel",
+  "secondary": 0.5,
+  "coeff": 0.5,
+  "alpha": 1.39,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "displacement",
+  "strength": 0.05
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.26
+ }
+]

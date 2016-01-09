@@ -1,0 +1,30 @@
+[
+ "sobel",
+ {
+  "effect": "sobel",
+  "secondary": {
+   "type": "beat",
+   "pulse": 17.705,
+   "f": 0,
+   "a": 0.9295,
+   "p": 0,
+   "o": 0
+  },
+  "coeff": 6.097,
+  "alpha": 1.949,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ }
+]

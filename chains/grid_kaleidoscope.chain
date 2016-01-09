@@ -1,0 +1,60 @@
+[
+ "grid kaleidoscope",
+ {
+  "effect": "grid",
+  "size": 1,
+  "angle": 0
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.47
+ },
+ {
+  "effect": "kaleidoscope",
+  "sides": 5,
+  "angle": {
+   "type": "osc",
+   "f": 0.178,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  },
+  "angle2": {
+   "type": "osc",
+   "f": 0.148,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "vibrance",
+  "strength": 0.32
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": 0,
+  "contrast": {
+   "type": "beat",
+   "pulse": 31.122,
+   "f": 2,
+   "a": 0,
+   "p": 0,
+   "o": 0.195
+  }
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": {
+   "type": "osc",
+   "f": 0.868,
+   "a": 1.005,
+   "p": 0,
+   "o": 0
+  },
+  "saturation": 0.954
+ }
+]

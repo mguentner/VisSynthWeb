@@ -1,0 +1,51 @@
+[
+ "motion echo",
+ {
+  "effect": "feedbackOut",
+  "blend": 0.72
+ },
+ {
+  "effect": "timeshift",
+  "time": 499
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "sobel",
+  "secondary": 0.5,
+  "coeff": 0.5,
+  "alpha": 0.5,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.05,
+  "interval": 1,
+  "damper": 0.85
+ },
+ {
+  "effect": "colorDisplacement",
+  "angle": 0,
+  "strength": {
+   "type": "osc",
+   "f": 0.148,
+   "a": 4.065,
+   "p": 0,
+   "o": 2.1
+  }
+ }
+]

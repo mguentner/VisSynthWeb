@@ -1,0 +1,34 @@
+[
+ "70's mandelbrot",
+ {
+  "effect": "localContrast",
+  "size": 6.73,
+  "strength": 0.21
+ },
+ {
+  "effect": "vibrance",
+  "strength": 1
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0,
+  "saturation": 0.16
+ },
+ {
+  "effect": "mandelbrot",
+  "center": {
+   "type": "pos",
+   "x": 0.703,
+   "y": 0.5
+  },
+  "size": 3.302,
+  "angle": 0,
+  "iterations": {
+   "type": "osc",
+   "f": 0.059,
+   "a": 5.338,
+   "p": 0,
+   "o": 2.638
+  }
+ }
+]

@@ -1,0 +1,39 @@
+[
+ "waveform",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "matte",
+  "rgb": {
+   "type": "rgb",
+   "r": 1.059,
+   "g": 1.205,
+   "b": 1.131
+  }
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0.946,
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": -0.45,
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "waveform"
+ },
+ {
+  "effect": "displacement",
+  "strength": 1.502
+ }
+]

@@ -1,0 +1,25 @@
+[
+ "plazm crash",
+ {
+  "effect": "feedbackOut",
+  "blend": 0.178
+ },
+ {
+  "effect": "smoothlife",
+  "birth_min": 0.104,
+  "birth_max": 0.359,
+  "death_min": 0.735
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 1,
+  "saturation": 0.784
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.768
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

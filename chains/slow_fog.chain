@@ -1,0 +1,23 @@
+[
+ "slow fog",
+ {
+  "effect": "vibrance",
+  "strength": 1
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.96
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.06,
+  "saturation": 0.03
+ },
+ {
+  "effect": "denoisefast",
+  "strength": 12.64
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

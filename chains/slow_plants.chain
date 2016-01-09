@@ -1,0 +1,53 @@
+[
+ "slow plants",
+ {
+  "effect": "sobel",
+  "secondary": 5.861,
+  "coeff": 5.678,
+  "alpha": 1,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.988
+ },
+ {
+  "effect": "reaction2",
+  "F": 0.0545,
+  "K": 0.062,
+  "D_a": 0.2,
+  "D_b": 0.1,
+  "speed": 19.87
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "levels",
+  "min": 0.298,
+  "gamma": 1,
+  "max": 0.223,
+  "r_min": 0.059,
+  "g_min": 0,
+  "b_min": 0,
+  "r_gamma": 1,
+  "g_gamma": 1,
+  "b_gamma": 1,
+  "r_max": 1.059,
+  "g_max": 1.205,
+  "b_max": 3.101
+ }
+]

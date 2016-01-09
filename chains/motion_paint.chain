@@ -1,0 +1,29 @@
+[
+ "motion paint",
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "capture",
+  "device": 0
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.16,
+  "interval": 1,
+  "damper": 0.75
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "noalpha"
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

@@ -1,0 +1,33 @@
+[
+ "cross 666",
+ {
+  "effect": "grid",
+  "size": 1,
+  "angle": 0
+ },
+ {
+  "effect": "mandelbrot",
+  "center": {
+   "type": "pos",
+   "x": 0.591,
+   "y": 0.784
+  },
+  "size": 3,
+  "angle": -1.586,
+  "iterations": 10
+ },
+ {
+  "effect": "analogize",
+  "exposure": 2,
+  "gamma": 1.5,
+  "glow": {
+   "type": "beat",
+   "pulse": 0,
+   "f": 2,
+   "a": 0.5,
+   "p": 0,
+   "o": 0.5
+  },
+  "glow_radius": 16
+ }
+]

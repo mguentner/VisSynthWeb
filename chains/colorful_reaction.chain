@@ -1,0 +1,34 @@
+[
+ "colorful reaction",
+ {
+  "effect": "brightnessContrast",
+  "brightness": 0.253,
+  "contrast": 0.512
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.97
+ },
+ {
+  "effect": "reaction",
+  "noise_factor": 0,
+  "zoom_speed": 0.001,
+  "scale1": 8,
+  "scale2": 16,
+  "scale3": 32,
+  "scale4": 64
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "analogize",
+  "exposure": 0.884,
+  "gamma": 0.528,
+  "glow": 1.224,
+  "glow_radius": 16
+ }
+]

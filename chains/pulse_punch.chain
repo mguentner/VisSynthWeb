@@ -1,0 +1,30 @@
+[
+ "pulse punch",
+ {
+  "effect": "zoomBlur",
+  "center": {
+   "type": "pos",
+   "x": 0,
+   "y": 0
+  },
+  "size": {
+   "type": "beat",
+   "pulse": 3.139,
+   "f": 0.045,
+   "a": 0.08,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "colorDisplacement",
+  "angle": 0,
+  "strength": {
+   "type": "osc",
+   "f": 220.32,
+   "a": 2.53,
+   "p": 0.09,
+   "o": 2.43
+  }
+ }
+]

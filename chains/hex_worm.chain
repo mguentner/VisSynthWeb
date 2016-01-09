@@ -1,0 +1,108 @@
+[
+ "hex worm",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "matte",
+  "rgb": {
+   "type": "rgb",
+   "r": 0,
+   "g": -0.01,
+   "b": -0.01
+  }
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.99
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": {
+   "type": "beat",
+   "pulse": 0,
+   "f": 2,
+   "a": 1,
+   "p": 0,
+   "o": -0.7
+  },
+  "contrast": 0
+ },
+ {
+  "effect": "polygon",
+  "sides": 6.52,
+  "x": 0,
+  "y": 0,
+  "size": 0.47,
+  "angle": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "matte",
+  "rgb": {
+   "type": "rgb",
+   "r": 0,
+   "g": 1,
+   "b": 1
+  }
+ },
+ {
+  "effect": "polygon",
+  "sides": 6,
+  "x": 0,
+  "y": 0,
+  "size": 0.5,
+  "angle": 0
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "transform",
+  "x": {
+   "type": "osc",
+   "f": 0.208,
+   "a": 0.35,
+   "p": 0,
+   "o": 0
+  },
+  "y": {
+   "type": "osc",
+   "f": 0.238,
+   "a": 0.49,
+   "p": 0,
+   "o": 0
+  },
+  "scale": 0.21,
+  "angle": {
+   "type": "osc",
+   "f": 0.528,
+   "a": 0.71,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.03,
+  "saturation": 0
+ },
+ {
+  "effect": "timeshift",
+  "time": 6.31
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

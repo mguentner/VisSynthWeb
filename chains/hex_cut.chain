@@ -1,0 +1,49 @@
+[
+ "hex cut",
+ {
+  "effect": "hueSaturation",
+  "hue": 0,
+  "saturation": 0.606
+ },
+ {
+  "effect": "polygon",
+  "sides": 6,
+  "x": 0,
+  "y": 0,
+  "size": 0.5,
+  "angle": {
+   "type": "osc",
+   "f": 5,
+   "a": 0.119,
+   "p": 0,
+   "o": 0.8825
+  }
+ },
+ {
+  "effect": "posterize",
+  "steps": 2.638
+ },
+ {
+  "effect": "invertColor"
+ },
+ {
+  "effect": "sobel",
+  "secondary": 0.5,
+  "coeff": 0.5,
+  "alpha": 0.5,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ }
+]

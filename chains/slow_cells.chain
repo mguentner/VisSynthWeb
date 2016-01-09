@@ -1,0 +1,45 @@
+[
+ "slow cells",
+ {
+  "effect": "glitch",
+  "scale": 16,
+  "detail": 25,
+  "strength": 0.82,
+  "speed": 1
+ },
+ {
+  "effect": "sobel",
+  "secondary": 2.849,
+  "coeff": 3.88,
+  "alpha": 1,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.994
+ },
+ {
+  "effect": "reaction2",
+  "F": 0.022,
+  "K": 0.049,
+  "D_a": 0.2,
+  "D_b": 0.1,
+  "speed": 2.303
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

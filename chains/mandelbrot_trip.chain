@@ -1,0 +1,30 @@
+[
+ "mandelbrot trip",
+ {
+  "effect": "vibrance",
+  "strength": 1
+ },
+ {
+  "effect": "mandelbrot",
+  "center": {
+   "type": "pos",
+   "x": 0.59,
+   "y": 0.57
+  },
+  "size": 5.36,
+  "angle": {
+   "type": "osc",
+   "f": 1.399,
+   "a": 0.82,
+   "p": 0,
+   "o": 0
+  },
+  "iterations": {
+   "type": "osc",
+   "f": 1.112,
+   "a": 3.06,
+   "p": 0,
+   "o": 3.06
+  }
+ }
+]

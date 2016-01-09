@@ -1,0 +1,53 @@
+[
+ "rainbow mist",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.089,
+  "interval": 1,
+  "damper": 0.75
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.851
+ },
+ {
+  "effect": "fastBlur",
+  "size": 20.738
+ },
+ {
+  "effect": "color",
+  "strength": 0.5,
+  "rgb": {
+   "type": "rgb",
+   "r": -0.06,
+   "g": -0.25,
+   "b": 0.09
+  }
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": 1.16,
+  "angle": -0.01
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.42,
+  "saturation": 0.06
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.28,
+  "saturation": 22.59
+ },
+ {
+  "effect": "blend_alpha"
+ }
+]

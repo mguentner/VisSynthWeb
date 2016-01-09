@@ -1,0 +1,38 @@
+[
+ "blu",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "matte",
+  "rgb": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "matte",
+  "rgb": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 0,
+   "a": 1
+  }
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "blend_mask"
+ }
+]

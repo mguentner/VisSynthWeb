@@ -1,0 +1,44 @@
+[
+ "rainbow lasers",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.074,
+  "interval": 1,
+  "damper": 0.75
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0,
+  "saturation": 0.343
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.88
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": 1.131,
+  "angle": -0.01
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.42,
+  "saturation": 0.119
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.28,
+  "saturation": 22.59
+ },
+ {
+  "effect": "blend_alpha"
+ }
+]

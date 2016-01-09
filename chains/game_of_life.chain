@@ -1,0 +1,31 @@
+[
+ "game of life",
+ {
+  "effect": "motion",
+  "threshold": 0.11,
+  "interval": 1,
+  "damper": 0.85
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": {
+   "type": "beat",
+   "pulse": 0,
+   "f": 2.03,
+   "a": 0.08,
+   "p": 3.79,
+   "o": 0.16
+  },
+  "contrast": -0.47
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.29
+ },
+ {
+  "effect": "life"
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

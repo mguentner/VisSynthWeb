@@ -1,0 +1,98 @@
+[
+ "hex glitter",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "hexagonalPixelate",
+  "center": {
+   "type": "pos",
+   "x": 0,
+   "y": 0
+  },
+  "size": {
+   "type": "beat",
+   "pulse": 1.16,
+   "f": 0.43,
+   "a": 1.53,
+   "p": 0.03,
+   "o": 22.1
+  }
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "ripple",
+  "width": {
+   "type": "osc",
+   "f": 0.223,
+   "a": 0.15,
+   "p": 0,
+   "o": 0.3
+  },
+  "length": {
+   "type": "osc",
+   "f": 0.313,
+   "a": 0.15,
+   "p": 0,
+   "o": 0.3
+  },
+  "angle": 0,
+  "strength": 2
+ },
+ {
+  "effect": "hexagonalPixelate",
+  "center": {
+   "type": "pos",
+   "x": 0,
+   "y": 0
+  },
+  "size": 21.47
+ },
+ {
+  "effect": "invertColor"
+ },
+ {
+  "effect": "blend",
+  "alpha": 0.5
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": -0.16,
+  "contrast": 1.11
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "fastBlur",
+  "size": 38.67
+ },
+ {
+  "effect": "blend",
+  "alpha": 0.37
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "blend",
+  "alpha": 0.839
+ },
+ {
+  "effect": "levels",
+  "min": 0,
+  "gamma": 0.856,
+  "max": 0.722,
+  "r_min": 0,
+  "g_min": 0,
+  "b_min": 0,
+  "r_gamma": 1,
+  "g_gamma": 1,
+  "b_gamma": 1,
+  "r_max": 1,
+  "g_max": 1,
+  "b_max": 1
+ }
+]

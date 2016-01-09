@@ -1,0 +1,73 @@
+[
+ "pulse worm",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "matte",
+  "rgb": {
+   "type": "rgb",
+   "r": 0,
+   "g": -0.01,
+   "b": -0.06
+  }
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.988
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "polygon",
+  "sides": 37.59,
+  "x": 0,
+  "y": 0,
+  "size": 0.49,
+  "angle": 0
+ },
+ {
+  "effect": "transform",
+  "x": {
+   "type": "osc",
+   "f": 0.435,
+   "a": 0.49,
+   "p": 0,
+   "o": 0
+  },
+  "y": {
+   "type": "osc",
+   "f": 0.329,
+   "a": 0.42,
+   "p": 0,
+   "o": 0
+  },
+  "scale": {
+   "type": "beat",
+   "pulse": 0.49,
+   "f": 0.04,
+   "a": 0.105,
+   "p": 0,
+   "o": -0.01
+  },
+  "angle": {
+   "type": "osc",
+   "f": 0.374,
+   "a": 0.71,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.03,
+  "saturation": 0
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

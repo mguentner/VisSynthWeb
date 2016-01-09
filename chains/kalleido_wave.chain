@@ -1,0 +1,70 @@
+[
+ "kalleido wave",
+ {
+  "effect": "matte",
+  "rgb": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": -0.902
+  }
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "matte",
+  "rgb": {
+   "type": "rgb",
+   "r": 1.059,
+   "g": 1.205,
+   "b": 1.131
+  }
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0.851,
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": -0.45,
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "waveform"
+ },
+ {
+  "effect": "displacement",
+  "strength": 0.606
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "kaleidoscope",
+  "sides": 5,
+  "angle": {
+   "type": "osc",
+   "f": 0.045,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  },
+  "angle2": {
+   "type": "osc",
+   "f": 0.817,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  }
+ }
+]

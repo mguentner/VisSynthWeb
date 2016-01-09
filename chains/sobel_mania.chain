@@ -1,0 +1,30 @@
+[
+ "sobel mania",
+ {
+  "effect": "feedbackOut",
+  "blend": 0.67
+ },
+ {
+  "effect": "sobel",
+  "secondary": -0.58,
+  "coeff": -0.02,
+  "alpha": 0.93,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

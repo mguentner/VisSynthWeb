@@ -1,0 +1,17 @@
+[
+ "inverse echo",
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "timeshift",
+  "time": 14.67
+ },
+ {
+  "effect": "invertColor"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.49
+ }
+]
