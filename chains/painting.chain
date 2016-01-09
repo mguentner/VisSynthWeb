@@ -1,0 +1,14 @@
+[
+ "painting",
+ {
+  "effect": "feedbackOut",
+  "blend": 0.96
+ },
+ {
+  "effect": "denoisefast",
+  "strength": 43.63
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

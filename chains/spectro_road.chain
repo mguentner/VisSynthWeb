@@ -1,0 +1,59 @@
+[
+ "spectro road",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1.023
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.648,
+  "interval": 1,
+  "damper": 0.936
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": 0.995,
+  "angle": 0
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0,
+  "saturation": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "spectrogram"
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "transform",
+  "x": -0.45,
+  "y": -1.485,
+  "scale": 1.981,
+  "angle": 0
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

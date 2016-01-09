@@ -1,0 +1,68 @@
+[
+ "motion recursion",
+ {
+  "effect": "motion",
+  "threshold": 0.3,
+  "interval": 1,
+  "damper": 0.99
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "transform",
+  "x": 0.25,
+  "y": 0.25,
+  "scale": 0.54,
+  "angle": {
+   "type": "osc",
+   "f": -0.163,
+   "a": -0.42,
+   "p": 0,
+   "o": -0.13
+  }
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": -0.28,
+  "saturation": 0.18
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "transform",
+  "x": -0.45,
+  "y": -0.13,
+  "scale": 0.75,
+  "angle": {
+   "type": "osc",
+   "f": 0.238,
+   "a": 0.45,
+   "p": 0,
+   "o": 0.16
+  }
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.45,
+  "saturation": 0.02
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

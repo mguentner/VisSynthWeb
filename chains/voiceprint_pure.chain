@@ -1,0 +1,44 @@
+[
+ "voiceprint pure",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "spectrogram"
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": 1,
+  "angle": 1.57
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": -0.605,
+  "saturation": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "transform",
+  "x": -0.006,
+  "y": 0,
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

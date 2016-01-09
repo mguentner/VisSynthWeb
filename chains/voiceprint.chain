@@ -1,0 +1,62 @@
+[
+ "voiceprint",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "spectrogram"
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": -0.605,
+  "saturation": 0
+ },
+ {
+  "effect": "colorkey",
+  "color": {
+   "type": "rgb",
+   "r": 0.2,
+   "g": 0.015,
+   "b": 0.97
+  },
+  "threshold": 0.053,
+  "feather": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0.002,
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": {
+   "type": "beat",
+   "pulse": 0.34,
+   "f": 2,
+   "a": 0,
+   "p": 0,
+   "o": 0.87
+  },
+  "angle": 0
+ }
+]

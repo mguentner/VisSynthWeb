@@ -1,0 +1,51 @@
+[
+ "drawing",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "denoisefast",
+  "strength": 30
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": 0,
+  "contrast": 0
+ },
+ {
+  "effect": "posterize",
+  "steps": 4
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "sobel",
+  "secondary": 1.11,
+  "coeff": 1.79,
+  "alpha": 0.95,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "invertColor"
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "blend_alpha"
+ }
+]

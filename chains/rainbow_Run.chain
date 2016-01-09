@@ -1,0 +1,30 @@
+[
+ "rainbow Run",
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": {
+   "type": "osc",
+   "f": 0.402,
+   "a": -0.768,
+   "p": 0,
+   "o": 0
+  },
+  "saturation": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "displacement",
+  "strength": {
+   "type": "osc",
+   "f": 0.768,
+   "a": 0.03,
+   "p": 0,
+   "o": 0
+  }
+ }
+]

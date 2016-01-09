@@ -1,0 +1,44 @@
+[
+ "rainbow looper",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1.023
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "vibrance",
+  "strength": 1
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.089,
+  "interval": 1,
+  "damper": 0.97
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "timeshift",
+  "time": {
+   "type": "osc",
+   "f": 200,
+   "a": 0,
+   "p": 0,
+   "o": 49.485
+  }
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.119,
+  "saturation": 0.089
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

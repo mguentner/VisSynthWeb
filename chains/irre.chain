@@ -1,0 +1,84 @@
+[
+ "irre",
+ {
+  "effect": "hexagonalPixelate",
+  "center": {
+   "type": "pos",
+   "x": 0.39,
+   "y": 0
+  },
+  "size": {
+   "type": "osc",
+   "f": 0.435,
+   "a": 5,
+   "p": 0,
+   "o": 10
+  }
+ },
+ {
+  "effect": "kaleidoscope",
+  "sides": 3.72,
+  "angle": {
+   "type": "osc",
+   "f": 0.435,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  },
+  "angle2": {
+   "type": "osc",
+   "f": 0.45,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "swirl",
+  "center": {
+   "type": "pos",
+   "x": 0,
+   "y": 0
+  },
+  "radius": 250,
+  "strength": {
+   "type": "osc",
+   "f": 0.329,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "life"
+ },
+ {
+  "effect": "colorDisplacement",
+  "angle": {
+   "type": "osc",
+   "f": 0,
+   "a": 0.34,
+   "p": 0,
+   "o": 0.68
+  },
+  "strength": 3
+ },
+ {
+  "effect": "mandelbrot",
+  "center": {
+   "type": "pos",
+   "x": 0.77,
+   "y": 0.5
+  },
+  "size": 2.56,
+  "angle": 0,
+  "iterations": 9.963
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "blend",
+  "alpha": 1.023
+ }
+]

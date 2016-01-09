@@ -1,0 +1,34 @@
+[
+ "shimmering displace",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "displacement",
+  "strength": {
+   "type": "osc",
+   "f": 0.474,
+   "a": 0.02,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "ripple",
+  "width": 0.031,
+  "length": 0.021,
+  "angle": 1.124,
+  "strength": {
+   "type": "osc",
+   "f": 1.069,
+   "a": 1.399,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "unsharpMask",
+  "size": 3.538,
+  "strength": 2.419
+ }
+]

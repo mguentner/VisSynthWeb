@@ -1,0 +1,35 @@
+[
+ "pulse ripple",
+ {
+  "effect": "ripple",
+  "width": {
+   "type": "osc",
+   "f": -27.25,
+   "a": 0.15,
+   "p": 0,
+   "o": 0.3
+  },
+  "length": {
+   "type": "osc",
+   "f": 8.51,
+   "a": 0.15,
+   "p": 0,
+   "o": 0.3
+  },
+  "angle": {
+   "type": "osc",
+   "f": 1.674,
+   "a": 0,
+   "p": 0,
+   "o": 0
+  },
+  "strength": {
+   "type": "beat",
+   "pulse": 78.987,
+   "f": 0,
+   "a": 0,
+   "p": 0,
+   "o": 0
+  }
+ }
+]

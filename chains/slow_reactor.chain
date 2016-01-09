@@ -1,0 +1,56 @@
+[
+ "slow reactor",
+ {
+  "effect": "sobel",
+  "secondary": 5.861,
+  "coeff": 5.678,
+  "alpha": 1,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.97
+ },
+ {
+  "effect": "reaction",
+  "noise_factor": 0,
+  "zoom_speed": 0,
+  "scale1": 8,
+  "scale2": 16,
+  "scale3": 32,
+  "scale4": 64
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.435
+ },
+ {
+  "effect": "reaction2",
+  "F": 0.0545,
+  "K": 0.062,
+  "D_a": 0.2,
+  "D_b": 0.1,
+  "speed": 19.87
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "relief",
+  "scale2": 16,
+  "scale4": 64
+ }
+]

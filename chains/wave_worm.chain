@@ -1,0 +1,64 @@
+[
+ "wave worm",
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "waveform"
+ },
+ {
+  "effect": "polygon",
+  "sides": 5.645,
+  "x": 0,
+  "y": 0,
+  "size": 0.495,
+  "angle": 0
+ },
+ {
+  "effect": "transform",
+  "x": {
+   "type": "osc",
+   "f": 0.127,
+   "a": 0.402,
+   "p": 0,
+   "o": 0
+  },
+  "y": {
+   "type": "osc",
+   "f": 0.082,
+   "a": 0.495,
+   "p": 0,
+   "o": 0.002
+  },
+  "scale": {
+   "type": "beat",
+   "pulse": 0.416,
+   "f": 2,
+   "a": 0,
+   "p": 0,
+   "o": 0.402
+  },
+  "angle": {
+   "type": "osc",
+   "f": 0.188,
+   "a": 2.739,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": -0.053,
+  "contrast": 0.87
+ }
+]

@@ -1,0 +1,66 @@
+[
+ "infinity contours",
+ {
+  "effect": "perspective",
+  "perspective": {
+   "type": "perspective",
+   "x1": -0.814,
+   "y1": 0.146,
+   "x2": -0.715,
+   "y2": 0.772,
+   "x3": -0.428,
+   "y3": 0.146,
+   "x4": -0.397,
+   "y4": 0.886
+  }
+ },
+ {
+  "effect": "sobel",
+  "secondary": 0.161,
+  "coeff": 0.298,
+  "alpha": 1.031,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "timeshift",
+  "time": 12.5
+ },
+ {
+  "effect": "transform",
+  "x": -0.02,
+  "y": 0.002,
+  "scale": 0.977,
+  "angle": 0
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "blend",
+  "alpha": 0.5,
+  "factor": 2
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

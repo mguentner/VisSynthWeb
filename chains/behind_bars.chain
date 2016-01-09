@@ -1,0 +1,30 @@
+[
+ "behind bars",
+ {
+  "effect": "hueSaturation",
+  "hue": 0,
+  "saturation": 0.64
+ },
+ {
+  "effect": "ripple",
+  "sizes": {
+   "type": "pos",
+   "x": -228.13,
+   "y": -236.21
+  },
+  "angle": 1.45,
+  "strength": 3.35
+ },
+ {
+  "effect": "grid",
+  "size": 1,
+  "angle": 0
+ },
+ {
+  "effect": "ripple",
+  "width": 0.51,
+  "length": 0.3,
+  "angle": 0,
+  "strength": 4.43
+ }
+]

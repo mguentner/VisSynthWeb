@@ -1,0 +1,64 @@
+[
+ "kaleidoscope",
+ {
+  "effect": "hueSaturation",
+  "hue": 0,
+  "saturation": 0.83
+ },
+ {
+  "effect": "ripple",
+  "sizes": {
+   "type": "pos",
+   "x": 0.37,
+   "y": 0.37
+  },
+  "angle": 1.62,
+  "strength": 2
+ },
+ {
+  "effect": "kaleidoscope",
+  "sides": 5,
+  "angle": {
+   "type": "osc",
+   "f": 0.178,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  },
+  "angle2": {
+   "type": "osc",
+   "f": 0.374,
+   "a": 1,
+   "p": 0,
+   "o": 0
+  }
+ },
+ {
+  "effect": "ripple",
+  "width": 0.16,
+  "length": 0.06,
+  "angle": 4.5,
+  "strength": {
+   "type": "beat",
+   "pulse": 68.43,
+   "f": 2,
+   "a": 0.13,
+   "p": 0,
+   "o": -0.39
+  }
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": {
+   "type": "beat",
+   "pulse": 1.262,
+   "f": 0.283,
+   "a": -0.03,
+   "p": 0,
+   "o": 1.041
+  },
+  "angle": 0
+ }
+]

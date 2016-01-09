@@ -1,0 +1,29 @@
+[
+ "cushions",
+ {
+  "effect": "timeshift",
+  "time": {
+   "type": "osc",
+   "f": 15.011,
+   "a": 12.5,
+   "p": 0,
+   "o": 12.5
+  }
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "fastBlur",
+  "size": 7.452
+ },
+ {
+  "effect": "mesh_displacement",
+  "sx": 0.251,
+  "sy": 0,
+  "sz": 0.343,
+  "anglex": 0.756,
+  "angley": 0,
+  "anglez": 0
+ }
+]

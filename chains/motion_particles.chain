@@ -1,0 +1,30 @@
+[
+ "motion particles",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.176,
+  "interval": 1,
+  "damper": 0.977
+ },
+ {
+  "effect": "fastBlur",
+  "size": 2.61
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "particles",
+  "anglex": 0.873,
+  "angley": 0,
+  "anglez": 0,
+  "size": 8.379,
+  "strength": 0.995,
+  "homing": 0.01,
+  "noise": 0.011,
+  "displacement": -0.004
+ }
+]

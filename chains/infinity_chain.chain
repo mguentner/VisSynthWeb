@@ -1,0 +1,45 @@
+[
+ "infinity chain",
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "timeshift",
+  "time": 12.5
+ },
+ {
+  "effect": "transform",
+  "x": -0.153,
+  "y": 0.086,
+  "scale": 0.805,
+  "angle": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "capture",
+  "device": 0
+ },
+ {
+  "effect": "perspective",
+  "perspective": {
+   "type": "perspective",
+   "x1": -0.814,
+   "y1": 0.146,
+   "x2": -0.715,
+   "y2": 0.772,
+   "x3": -0.428,
+   "y3": 0.146,
+   "x4": -0.397,
+   "y4": 0.886
+  }
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

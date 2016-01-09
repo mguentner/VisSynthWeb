@@ -1,0 +1,43 @@
+[
+ "spectro wave pure",
+ {
+  "effect": "spectrogram"
+ },
+ {
+  "effect": "transform",
+  "x": -0.148,
+  "y": 0,
+  "scale": 1.359,
+  "angle": 1.569
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "waveform"
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "blend",
+  "alpha": 0.5
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "patch_displacement",
+  "sx": 0,
+  "sy": 0,
+  "sz": 0.298,
+  "anglex": 0,
+  "angley": 0,
+  "anglez": 0,
+  "scale": 1.041,
+  "pixelate": 0
+ }
+]

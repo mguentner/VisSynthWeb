@@ -1,0 +1,18 @@
+[
+ "unknown0",
+ {
+  "effect": "select_audio",
+  "audio_device": 0.606
+ },
+ {
+  "effect": "fps",
+  "fps": 25
+ },
+ {
+  "effect": "type_byte"
+ },
+ {
+  "effect": "capture",
+  "device": 1
+ }
+]

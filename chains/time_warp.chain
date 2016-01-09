@@ -1,0 +1,13 @@
+[
+ "time warp",
+ {
+  "effect": "timeshift",
+  "time": {
+   "type": "osc",
+   "f": 12.489,
+   "a": 12.467,
+   "p": 0,
+   "o": 10.439
+  }
+ }
+]

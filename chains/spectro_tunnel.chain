@@ -1,0 +1,85 @@
+[
+ "spectro tunnel",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1.023
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.405,
+  "interval": 1,
+  "damper": 0.936
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": 0.995,
+  "angle": 0
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0,
+  "saturation": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "spectrogram"
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "transform",
+  "x": -0.46,
+  "y": -1.445,
+  "scale": 1.907,
+  "angle": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": 1,
+  "angle": -1.587
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "transform",
+  "x": -0.267,
+  "y": 0,
+  "scale": 1,
+  "angle": 3.131
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

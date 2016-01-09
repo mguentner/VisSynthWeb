@@ -1,0 +1,25 @@
+[
+ "heartbeat",
+ {
+  "effect": "bulgePinch",
+  "center": {
+   "type": "pos",
+   "x": 0,
+   "y": 0
+  },
+  "radius": 271.48,
+  "strength": {
+   "type": "beat",
+   "pulse": -0.06,
+   "f": 2.1,
+   "a": 0.84,
+   "p": 0,
+   "o": -0.04
+  }
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0,
+  "saturation": 0.31
+ }
+]

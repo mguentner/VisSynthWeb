@@ -1,0 +1,15 @@
+[
+ "space warp",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "fastBlur",
+  "size": 32.82
+ },
+ {
+  "effect": "displacement",
+  "type": 0.06,
+  "strength": 0.39
+ }
+]

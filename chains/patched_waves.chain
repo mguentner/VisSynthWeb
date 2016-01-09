@@ -1,0 +1,56 @@
+[
+ "patched waves",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "spectrogram"
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": -0.605,
+  "saturation": 0
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0.002,
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0,
+  "scale": 1.577,
+  "angle": 0.67
+ },
+ {
+  "effect": "fastBlur",
+  "size": 3.823
+ },
+ {
+  "effect": "patch_displacement",
+  "sx": 0,
+  "sy": 0,
+  "sz": 0.37,
+  "anglex": 0,
+  "angley": 0.402,
+  "anglez": 0,
+  "scale": 0.902,
+  "pixelate": 0
+ }
+]

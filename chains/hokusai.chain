@@ -1,0 +1,56 @@
+[
+ "hokusai",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "transform",
+  "x": -0.306,
+  "y": -0.004,
+  "scale": 0.657,
+  "angle": {
+   "type": "osc",
+   "f": 1.14,
+   "a": -0.259,
+   "p": 0,
+   "o": -0.46
+  }
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "transform",
+  "x": 0.131,
+  "y": 0,
+  "scale": 0.577,
+  "angle": {
+   "type": "osc",
+   "f": 1.14,
+   "a": 0.374,
+   "p": 0.722,
+   "o": 0.42
+  }
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "timeshift",
+  "time": 16.608
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

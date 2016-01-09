@@ -1,0 +1,58 @@
+[
+ "point grid",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "colorHalftone",
+  "center": {
+   "type": "pos",
+   "x": 0,
+   "y": 0
+  },
+  "angle": 30,
+  "size": {
+   "type": "beat",
+   "pulse": 0,
+   "f": 2.03,
+   "a": 0.14,
+   "p": 0,
+   "o": 7.88
+  }
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "invertColor"
+ },
+ {
+  "effect": "blend",
+  "alpha": 0.5
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": -0.2,
+  "contrast": 0.64
+ },
+ {
+  "effect": "sobel",
+  "secondary": 0.33,
+  "coeff": 0.16,
+  "alpha": 0.5,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ }
+]

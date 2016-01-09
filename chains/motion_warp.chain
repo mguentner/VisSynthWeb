@@ -1,0 +1,27 @@
+[
+ "motion warp",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "motion",
+  "threshold": 0.09,
+  "interval": 0.99,
+  "damper": 0.84
+ },
+ {
+  "effect": "fastBlur",
+  "size": 34.75
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "displacement",
+  "strength": 0.104
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.39
+ }
+]

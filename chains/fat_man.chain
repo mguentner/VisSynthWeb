@@ -1,0 +1,31 @@
+[
+ "fat man",
+ {
+  "effect": "feedbackOut",
+  "blend": 0.95
+ },
+ {
+  "effect": "dilate",
+  "iterations": 0.54
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 0.06,
+  "saturation": {
+   "type": "beat",
+   "pulse": 3.858,
+   "f": 0.01,
+   "a": 0.06,
+   "p": 0,
+   "o": -0.06
+  }
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": -0.01,
+  "contrast": 0.25
+ }
+]

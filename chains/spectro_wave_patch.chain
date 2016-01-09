@@ -1,0 +1,50 @@
+[
+ "spectro wave patch",
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "spectrogram"
+ },
+ {
+  "effect": "transform",
+  "x": -0.148,
+  "y": 0,
+  "scale": 1.359,
+  "angle": 1.575
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "waveform"
+ },
+ {
+  "effect": "rainbow"
+ },
+ {
+  "effect": "blend",
+  "alpha": 0.5
+ },
+ {
+  "effect": "blend",
+  "alpha": 0.53
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "patch_displacement",
+  "sx": 0,
+  "sy": 0,
+  "sz": 1.031,
+  "anglex": 0,
+  "angley": 0,
+  "anglez": 0,
+  "scale": 1.041,
+  "pixelate": 0.954
+ }
+]

@@ -1,0 +1,58 @@
+[
+ "infinity contours  2",
+ {
+  "effect": "motion",
+  "threshold": 0.176,
+  "interval": 1,
+  "damper": 0.96
+ },
+ {
+  "effect": "sobel",
+  "secondary": 0.161,
+  "coeff": 0.298,
+  "alpha": 1.031,
+  "areas": {
+   "type": "rgba",
+   "r": 0,
+   "g": 0,
+   "b": 0,
+   "a": 1
+  },
+  "edges": {
+   "type": "rgba",
+   "r": 1,
+   "g": 1,
+   "b": 1,
+   "a": 1
+  }
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 1
+ },
+ {
+  "effect": "timeshift",
+  "time": 12.5
+ },
+ {
+  "effect": "transform",
+  "x": -0.058,
+  "y": 0.032,
+  "scale": 0.925,
+  "angle": 0
+ },
+ {
+  "effect": "stack_swap"
+ },
+ {
+  "effect": "blend",
+  "alpha": 0.5,
+  "factor": 2
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]

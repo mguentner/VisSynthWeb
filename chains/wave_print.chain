@@ -1,0 +1,35 @@
+[
+ "wave print",
+ {
+  "effect": "waveform"
+ },
+ {
+  "effect": "stack_push"
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.943
+ },
+ {
+  "effect": "transform",
+  "x": 0,
+  "y": 0.002,
+  "scale": 1,
+  "angle": 0
+ },
+ {
+  "effect": "blend_alpha"
+ },
+ {
+  "effect": "brightnessContrast",
+  "brightness": 0,
+  "contrast": 0.069
+ },
+ {
+  "effect": "feedbackIn"
+ },
+ {
+  "effect": "denoisefast",
+  "strength": 30
+ }
+]

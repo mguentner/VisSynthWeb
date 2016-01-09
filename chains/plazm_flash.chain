@@ -1,0 +1,34 @@
+[
+ "plazm flash",
+ {
+  "effect": "feedbackOut",
+  "blend": 0.313
+ },
+ {
+  "effect": "zoomBlur",
+  "center": {
+   "type": "pos",
+   "x": 0,
+   "y": 0
+  },
+  "size": 0.119
+ },
+ {
+  "effect": "smoothlife",
+  "birth_min": 0.104,
+  "birth_max": 0.359,
+  "death_min": 0.735
+ },
+ {
+  "effect": "hueSaturation",
+  "hue": 1.481,
+  "saturation": 0
+ },
+ {
+  "effect": "feedbackOut",
+  "blend": 0.768
+ },
+ {
+  "effect": "feedbackIn"
+ }
+]
