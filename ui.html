@@ -579,26 +579,35 @@
 
     /* the undo history. updated by frequent save() calls */
     var undo_history=[];
-    
+
+    var save=function(chain) {
+      var json=JSON.stringify(chain, null, ' ');
+      put('/chains/', json);
+
+    }
     /* save all chains to server and undo_history */
-    var save=function()
+    var save_chains=function()
     {
-      var chains=[];
-      chains.push($('#pre_chain').data('chain'));
-      chains.push($('#post_chain').data('chain'));      
-      $('#chains .chain_token').each(function(){
-        chains.push($(this).data('chain'));
-      });      
-      var json=JSON.stringify(chains,null,' ');
-      put('/saves'+session_url+'chains.json',json);
-      undo_history.push(json);
-      
+      var pre_chain = ($('#pre_chain').data('chain'));
+      var post_chain = ($('#post_chain').data('chain'));
+      var current_chain=$('#chains .active').data('chain');
+      /* Make sure that pre_chain and post_chain have a name */
+      if (pre_chain[0] != typeof(String)) {
+        pre_chain.unshift("pre");
+      }
+      if (post_chain[0] != typeof(String)) {
+        post_chain.unshift("post");
+      }
+      save(pre_chain);
+      save(post_chain);
+      /* don't save chains without a name */
+      if (typeof(current_chain[0]) == "string" && current_chain[0] != "")
+        save(current_chain);
+      //undo_history.push(json);
       console.log('Saved.');
-      
       savetimeout=false;
     }
-    
-    
+
     var runTimeline=function()
     {
       // send out to control server
@@ -885,7 +894,7 @@
     var updateChain=function(event,ui)
     {
       if(savetimeout) clearTimeout(savetimeout);
-      savetimeout=setTimeout(save,1000);
+      savetimeout=setTimeout(save_chains,1000);
             
       var full_chain=[];
             
@@ -937,39 +946,37 @@
       });
     }
     init_chain_list('#chain,#pre_chain,#post_chain');
-        
+
     var token=$('#chains .chain_token').clone();
     $('#chains .chain_token').addClass('active');
-    
+
     var load=function(json)
     {
       if(!json) return;
-      var chains=JSON.parse(json);
+      var chain=JSON.parse(json);
+      if(!chain) return;
 
-      // add pre- and post chain to legacy chains 
-      if(typeof(chains[0][0])=='string') // if first chain is a named one, we have a legacy save.
-        chains.unshift([{"effect": "capture","device": 0}],[]);
 
-      var pre_chain=chains.shift();
-      var post_chain=chains.shift();
-      listEffects(pre_chain,'#pre_chain');
-      listEffects(post_chain,'#post_chain');
-
-      // delete old lists before loading new ones
-      $('#chains').empty();      
-      chains.forEach(function(chain)
-      {
-        if(!chain) chain=[""];
-        
+      if (chain[0] == "pre") {
+        chain.shift();
+        /* If pre chain is empty, insert the default effect */
+        if (chain.length == 0) {
+          chain.append({"effect": "capture","device": 0});
+        }
+        listEffects(chain,'#pre_chain');
+      } else if(chain[0] == "post") {
+        chain.shift();
+        listEffects(chain,'#post_chain');
+      } else {
         var chain_token=token.clone();
         $('#chains').append(chain_token);
         if(!chain[0] || typeof(chain[0])!='string')
           chain.unshift("");
         chain_token.find('input').val(chain[0]);
         chain_token.data('chain',chain);
-      });
-            
-      $('#chains>*:first-child').click();
+        if ($('#chains').length == 1)
+          $('#chains>*:first-child').click();
+      }
     }
 
     var load_timeline=function(json){
@@ -1213,13 +1220,18 @@
         chain_token.click();
     }
 
-    // load chains
-    get('/saves'+session_url+'chains.json',function(data){
-      if(!data) // no saved chains in this session 
-        get('/saves/chains.json',load); // load default chain instead
-      else
-        load(data);
-    });
+    function init_chains() {
+      // load chains
+      get('/chains',function(data){
+        if(data) {
+          chains = JSON.parse(data);
+          for (i=0; i<chains.length; ++i) {
+            get('/chains/' + chains[i], load); // load default chain instead
+          }
+        }
+      });
+    }
+    init_chains();
 
     get('/saves'+session_url+'timeline.json',function(data){
       if(!data) // no saved chains in this session 

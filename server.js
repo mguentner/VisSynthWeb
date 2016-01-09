@@ -38,7 +38,7 @@ var server=http.createServer(function (req, res) {
   console.log("Serving "+req.url);
 
   var parts = req.url.split('?');
-  parts[0]=parts[0].substring(1); // strip trailing / 
+  parts[0]=parts[0].substring(1); // strip trailing /
   var key=parts[0];
 
   if(req.method=='PUT')
@@ -47,26 +47,38 @@ var server=http.createServer(function (req, res) {
     data[key]='';
     req.on('data',function(chunk){data[key]+=chunk;});
     req.on('end' ,function()
-    {    
+    {
       res.end();
-     
-      if(key.match(/saves\/.*/))
+
+      if(key.match(/chains\//))
       {
-        // if it denotes a file in saves/, store it to disk
-        fs.writeFileSync(key,data[key]);
+        // This is a request to store a chain
+        chain = JSON.parse(data[key]);
+        if (!chain) return;
+        // figure out the file name
+        if (typeof(chain[0]) != "string" || chain[0].length == 0) return;
+        filename = "chains/" + chain[0].replace(/[^a-zA-Z0-9]/g, "_") + ".chain"
+        fs.writeFileSync(filename,data[key]);
         delete data[key];
-        console.log(key+' stored.');
-      }      
+        console.log(filename+' stored.');
+      }
       else if(key.match(/feeds\/.*/) && pending[key])
       {
         // if it denotes a feed in feeds/ answer pending requests for this key
-        pending[key].end(data[key]);        
+        pending[key].end(data[key]);
         delete pending[key];
         delete data[key];
       }
       else
         res.end('Invalid PUT path');
     });
+  }
+  else if(key.match(/chains\/?$/)) {
+    var lsarry = fs.readdirSync(key, data[key]);
+    lsarry = lsarry.filter(function(e){return !(e.match(/.*\.chain$/) === null)});
+    res.write(JSON.stringify(lsarry));
+    res.end();
+    console.log(key+' listed.');
   }
   else if(key.match(/feeds\/.*/))
   {
