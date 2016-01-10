@@ -1,3 +1,7 @@
 [
- "pre"
+ "pre",
+ {
+  "effect": "capture",
+  "device": 0
+ }
 ]
