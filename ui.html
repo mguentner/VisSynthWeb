@@ -15,8 +15,8 @@
     <button id=screenshot onclick="screenshot()">SCREENSHOT</button>
     <button id=undo onclick="undo()">UNDO</button>
     <!--<button id=timeline_button onclick="toggle_timeline()">TIMELINE</button>-->
-    <button id=recorder_start_button onclick="get('/recorder/start')">START RECORDING</button>
-    <button id=recorder_stop_button onclick="get('/recorder/stop')">STOP RECORDING</button>
+    <button id=recorder_start_button onclick="start_recorder()">START RECORDING</button>
+    <button id=recorder_stop_button onclick="stop_recordeR()">STOP RECORDING</button>
     <span id=stats></span>
   </div>
 
@@ -540,9 +540,9 @@
   <script>
   
     // get session url, if any
-    var session_url='/';
+    var session_url='default';
     if(document.location.hash)
-      session_url+=document.location.hash.substring(1)+'_';
+      session_url=document.location.hash.substring(1);
 
     var put=function(url,data)
     {
@@ -568,7 +568,7 @@
     // send command to remote server
     function send(command)
     {
-      put('/feeds'+session_url+'command',command+';\n');
+      put('/sessions/' + session_url + '/feeds/command',command+';\n');
     }
 
     function restart()
@@ -582,7 +582,7 @@
 
     var save=function(chain) {
       var json=JSON.stringify(chain, null, ' ');
-      put('/chains/', json);
+      put('/sessions/' + session_url + '/chains', json);
 
     }
     /* save all chains to server and undo_history */
@@ -1222,11 +1222,11 @@
 
     function init_chains() {
       // load chains
-      get('/chains',function(data){
+      get('sessions/' + session_url + '/chains',function(data){
         if(data) {
           chains = JSON.parse(data);
           for (i=0; i<chains.length; ++i) {
-            get('/chains/' + chains[i], load); // load default chain instead
+            get('/sessions/' + session_url + '/chains/' + chains[i], load);
           }
         }
       });
@@ -1298,7 +1298,7 @@
       preview_offline_timeout=setTimeout(function(){
         document.getElementById('stats').innerHTML='offline';
       },500);
-      get('/feeds'+session_url+'preview',function(json)
+      get('/sessions/' + session_url + '/feeds' + '/preview',function(json)
       {
         if(json)
 	{
@@ -1333,7 +1333,15 @@
       $(document.body).toggleClass('chain_layout');      
       $(document.body).toggleClass('timeline_layout');
     }
-      
+
+    function start_recorder() {
+      get('/sessions/' + session_url + '/recorder/start');
+    }
+
+    function stop_recorder() {
+      get('/sessions/' + session_url + '/recorder/stop');
+    }
+
     // double tap quirk for touch screens
     var last_tap;
     $(document.body).on('touchend','*',function(e){
